@@ -6,32 +6,38 @@ body {
 
 .link {
     display:inline-block;
-    font-size: clamp(75%, 2vw, 125%);
+    font-size: clamp(125%, 2vw, 175%);
+    white-space:normal;
+    text-shadow: 5px 5px 10px black;
 }
 
 .title {
-    font-size: clamp(125%, 2vw, 250%);
+    font-size: clamp(175%, 2vw, 250%);
     text-align: center;
+    text-shadow: 3px 3px 7px black;
 }
 
 .header {
     text-align: center;
     font-size: clamp(75%, 1vw, 125%);
+    text-shadow: 3px 3px 7px black;
 }
+
 .preview {
     display:inline-block;
-    padding: 2%;
-    width: clamp(30%, 1vw, 100%);
+    padding: 0%;
+    width: clamp(40%, 1vw, 100%);
 }
 
 .preview-text {
     text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 
 .imageContainer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .subContainer {
