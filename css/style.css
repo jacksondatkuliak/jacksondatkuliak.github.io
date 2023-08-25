@@ -6,8 +6,18 @@ body {
 
 .link {
     display:inline-block;
+    font-size: clamp(75%, 2vw, 125%);
 }
 
+.title {
+    font-size: clamp(125%, 2vw, 250%);
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-size: clamp(75%, 1vw, 125%);
+}
 .preview {
     width: 45%;
     height: 20%;
