@@ -19,23 +19,19 @@ body {
     font-size: clamp(75%, 1vw, 125%);
 }
 .preview {
-    width: 45%;
-    height: 20%;
     display:inline-block;
-    padding:2.5%;
+    padding: 2%;
+    width: clamp(30%, 1vw, 100%);
 }
 
 .preview-text {
-    display:inline-block;
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 .imageContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .subContainer {
