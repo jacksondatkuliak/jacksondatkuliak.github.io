@@ -2,3 +2,33 @@ body {
     font-family: sans-serif;
     background-color: grey;
 }
+
+.link {
+    display:inline-block;
+}
+
+.preview {
+    width: 25%;
+    height: 20%;
+    display:inline-block;
+}
+
+.preview-text {
+    display:inline-block;
+    width: 19.6%;
+    text-align: center;
+    position: relative;
+    height: 100px;
+}
+
+.object {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
