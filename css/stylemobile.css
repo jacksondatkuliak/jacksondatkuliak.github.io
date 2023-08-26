@@ -33,12 +33,13 @@ body {
 .preview {
     display:inline-block;
     padding: 0%;
-    width: 40%
+    width: clamp(90%, 1vw, 100%);
 }
 
 .preview-text {
     text-align: center;
     text-shadow: 2px 2px 4px black;
+    font-size: 125%;
 }
 
 .imageContainer {
