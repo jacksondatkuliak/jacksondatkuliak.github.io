@@ -50,7 +50,7 @@ body {
 .subContainer {
     display: flex;
     justify-content:space-around;
-    font-size: clamp(25%, 2.5vw, 150%);
+    font-size: clamp(25%, 1vw, 150%);
 }
 .center {
     text-align: center;
