@@ -4,7 +4,7 @@ body {
 }
 
 .title {
-    font-size: clamp(175%, 2vw, 250%);
+    font-size: clamp(175%, 1vw, 250%);
     text-align: center;
     text-shadow: 3px 3px 7px black;
 }
