@@ -36,6 +36,13 @@ body {
     width: 40%
 }
 
+.preview_about {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 40%
+}
 .preview-text {
     text-align: center;
     text-shadow: 2px 2px 4px black;
@@ -56,6 +63,17 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.about_body {
+    z-index: 2;
+    position: absolute;
+    top:0%;
+    left:0%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
 }
 
 a:visited {
