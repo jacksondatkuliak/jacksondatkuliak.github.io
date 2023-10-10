@@ -60,11 +60,11 @@
         <h3>Stacking and Calibration Frames</h3>
         <p>Well, now we have the data. How do we make the final image? I already mentioned the first step, stacking. Let’s go a little more in depth on that. To get a good stacked image, you need calibration frames alongside the frames that you capture during the night. In daytime photography, there is so much light that is hitting the camera sensor that most sources of noise in the camera sensor are kind of irrelevant. There is enough light hitting the camera sensor that these sources of noise become negligible. This is not the case in astrophotography because so little light is hitting the camera sensor. To get rid of this excess noise, we use calibration frames in the stacking process. The calibration frames that are typically used are dark frames, bias frames, and flat frames. Light frames are the actual pictures of the night sky that contain all the data we are trying to extract. Dark and bias frames are both taken with the lens cap on the camera and are used to measure the amount of noise the camera sensor generates when taking a photo. Dark frames measure the dark current that is generated while the camera is taking the exposure and have the same exposure length as the light frames. Bias frames record the read noise of the camera sensor and are typically the shortest possible exposure time of the camera you are using. Flat frames don’t measure noise, but measure the optical imperfections of the imaging system. To take flat frames, you need to have an even illumination across the camera sensor. I usually do this by placing an LED panel on top of my camera lens, but some people prefer to wait until daytime and point their imaging system at a nice blue spot in the sky. Either way you take your flats, they record the position of dust particles and the vignette of your imaging system.</p>
         <div class="imageContainer">
-            <img class="preview_about" src="/images/light.jpg">
+            <img class="preview_about" src="/images/dark.jpg">
             <img class="preview_about" src="/images/flat.jpeg">
         </div>
         <div class="subContainerAbout">
-            <p class="preview_text_about">A single light frame and flat frame</p>
+            <p class="preview_text_about">A single dark frame and flat frame</p>
         </div>
         <p>Without flat frames, any dust particles that were accumulated throughout the night would be visible in the final image and there would be horrible gradients across the whole image. The stacking program takes all of these frames, light, dark, bias, and flats and creates a calibrated image that (theoretically) just contains the signal we are looking for.</p>
         <h3>Processing</h3>
