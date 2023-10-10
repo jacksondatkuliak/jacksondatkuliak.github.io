@@ -18,6 +18,13 @@
         <p>Astrophotography is a quite a bit more complex than normal photography. The main difference between them is the camera’s exposure time, which is how long the camera sensor is recording the incoming light hitting the sensor. For normal daytime photography, this can be a tiny fraction of a second. During the night or in a dark room, there is a lot less light for your camera sensor to see. A lot of modern smartphone cameras have integrated a night mode where you hold your phone still for a few seconds and take a long-exposure photo to capture more detail and decrease noise in the final image. Astrophotography operates on the same principle, just to the extreme. Instead of just a few seconds of exposure time, astrophotos are generally exposed from anywhere to tens of minutes to tens of hours. This makes the whole operation of acquiring the photos much more complex.</p>
         <h3>Exposure Time</h3>
         <p>I mentioned above that most astrophotos have exposure times that are in the hours, but how do we achieve that? Well, we don’t just take one photo, we take many individual shorter exposures and stack them. Stacking is a very complicated process that is handled by a computer program, but the gist of it is that you have many individual photos of the same target and combine them all in such a way that the signal (the object in space we are trying to photograph) of all the images is added together and the residual noise in all of the images is subtracted out. This greatly increases the total signal-to-noise ratio (SNR). The higher total exposure time you have, the better and more detailed the final stacked image will come out. The individual pictures, or frames, are generally anywhere from a few seconds to a few minutes long. Most of my astrophotos have subframes that are 5 minutes long. As you might be able to guess, stacking also lets us combine frames from different nights.</p>
+        <div class="imageContainer">
+            <img class="preview_about" src="images/singleframe.jpg">
+            <img class="preview_about" src="images/stakcedimage.jpg">
+        </div>
+        <div class="subContainerAbout">
+            <p class="preview-text">A single 3 minute subexposure and the final stacked image with 14 hours of exposure</p>
+        </div>
         <h3>Untracked Astrophotography and Star Trackers</h3>
         <p>Well, you may be wondering now, how do we achieve a 5 minute long exposure of the night sky? If you just use a camera on a tripod, you will notice the stars start to trail after just a few seconds of exposure time. This is because our camera and tripod are not actually stationary, but are rotating with the Earth. It’s not very noticeable to the naked eye, but to a camera that is taking long exposures this rotation is obvious. This is not good as the signal you are trying to capture will be smeared in the final photo and the stars will look very elongated. This is called untracked astrophotography, and you can still get some pretty good images on bright targets with this method if your subframes exposure time is short enough. I attempted untracked for a few nights and did not have a great time with it. It’s very laborious because you must recenter the target every few minutes and the final image really is not that great, so I quickly bought a star tracker after my first few nights of astrophotography.</p>
         <div class="imageContainer">
@@ -101,7 +108,11 @@
         <div class="subContainerAbout">
             <p class="preview_about">Two starless images in different stages of the stretching process</p>
         </div>
-        <p>At some point in the processing workflow, it’s important to try some noise removal. Some people do noise removal while the image is still linear, some do it right after stretching, and some wait and do it as the last process in their workflow. There are many different tools to remove noise from your image, but I usually use an AI-assisted tool called NoiseXTerminator at some point in my processing workflow. Another topic I will touch on that is very important is star removal. Star removal isn’t strictly necessary, but it greatly aides in the making of the final image. The problem with having stars in our image is that they are incredibly bright when compared to the nebulosity we are trying to capture. When stretching an image with the stars still present, the stars will fill the field and make it a lot harder to completely stretch the nebulosity. So before I stretch I do a star removal to take the stars out of the image. After doing this, I process the stars image and the nebulosity image separately and recombine them at the end of the workflow. This allows you to create a much nicer looking image in the end that have reasonable looking stars and bright, beautiful nebulosity. The processes I use for star removal are StarXTerminator and StarNet.</p>
+        <p>At some point in the processing workflow, it’s important to try some noise removal. Some people do noise removal while the image is still linear, some do it right after stretching, and some wait and do it as the last process in their workflow. There are many different tools to remove noise from your image, but I usually use an AI-assisted tool called NoiseXTerminator at some point in my processing workflow.</p>
+        <div class="subContainerAbout">
+            <p class="preview_text_about">Image with no noise reduction applied and an image with NoiseXTerminator applied in PixInsight</p>
+        </div>
+        <p>Another topic I will touch on that is very important is star removal. Star removal isn’t strictly necessary, but it greatly aides in the making of the final image. The problem with having stars in our image is that they are incredibly bright when compared to the nebulosity we are trying to capture. When stretching an image with the stars still present, the stars will fill the field and make it a lot harder to completely stretch the nebulosity. So before I stretch I do a star removal to take the stars out of the image. After doing this, I process the stars image and the nebulosity image separately and recombine them at the end of the workflow. This allows you to create a much nicer looking image in the end that have reasonable looking stars and bright, beautiful nebulosity. The processes I use for star removal are StarXTerminator and StarNet.</p>
         <div class="imageContainer">
             <img class="preview_about" src="/images/stars.jpg">
             <img class="preview_about" src="/images/starless.jpg">
@@ -116,14 +127,14 @@
             <img class="preview_about" src="/images/noah2.jpeg">
         </div>
         <div class="subContainerAbout">
-            <p class="preview_about">This little guy really does follow me around every night I shoot. Not that I'm complaining, or anything.</p>
+            <p class="preview_about">This little guy really does follow me around every night I shoot. Not that I'm complaining, or anything</p>
         </div>
         <div class="imageContainer">
             <img class="preview_about" src="/images/untracked.jpeg">
             <img class="preview_about" src="/images/badguiding.jpeg">
         </div>
         <div class="subContainerAbout">
-            <p class="preview_about">My setup on one of the first nights before I got a star tracker. An image of me having a very bad time with guiding on one of the first nights I got a new mount.</p>
+            <p class="preview_about">My setup on one of the first nights before I got a star tracker and me having a very bad time with guiding on one of the first nights I got a new mount</p>
         </div>
     </div>
 </body>
