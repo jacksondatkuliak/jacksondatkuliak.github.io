@@ -40,10 +40,17 @@ body {
     display:inline-block;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
+    padding-bottom: 1%;
     width: 40%
 }
+
 .preview-text {
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.preview_text_about {
     text-align: center;
     text-shadow: 2px 2px 4px black;
 }
@@ -58,6 +65,11 @@ body {
     display: flex;
     justify-content:space-around;
     font-size: clamp(25%, 1vw, 150%);
+}
+
+.subContainerAbout {
+    display: flex;
+    justify-content:space-around;
 }
 .center {
     text-align: center;
