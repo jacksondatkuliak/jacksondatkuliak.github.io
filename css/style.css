@@ -42,6 +42,12 @@ body {
     padding-bottom: 5%;
     width: 15%
 }
+.preview3 {
+    display:inline-block;
+    padding: 0%;
+    padding-bottom: 5%;
+    width: 80%
+}
 
 .preview_about {
     display:inline-block;
