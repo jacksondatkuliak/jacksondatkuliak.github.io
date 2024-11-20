@@ -3,23 +3,12 @@
 ********************************************************************
 PixInsight XML Process Serialization Module - XPSM 1.0
 ********************************************************************
-Generated on 2024-03-26T04:08:04.915Z
-PixInsight Core 1.8.9-2 (x64)
+Generated on 2024-10-15T00:06:24.986Z
+PixInsight Core 1.8.9-3 (x64)
 Copyright (c) 2003-2024 Pleiades Astrophoto
 ********************************************************************
 -->
 <xpsm version="1.0" xmlns="http://www.pixinsight.com/xpsm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pixinsight.com/xpsm http://pixinsight.com/xpsm/xpsm-1.0.xsd">
-   <instance class="StarXTerminator" version="256" id="starx_instance">
-      <parameter id="ai_file">StarXTerminator.lite.nonoise.11.pb</parameter>
-      <parameter id="stars" value="true"/>
-      <parameter id="unscreen" value="false"/>
-      <parameter id="overlap" value="0.50"/>
-   </instance>
-   <instance class="NoiseXTerminator" version="256" id="noisex_instance">
-      <parameter id="ai_file">NoiseXTerminator.2.pb</parameter>
-      <parameter id="denoise" value="0.90"/>
-      <parameter id="detail" value="0.15"/>
-   </instance>
    <instance class="AutomaticBackgroundExtractor" version="256" id="ABE_instance">
       <parameter id="tolerance" value="1.000"/>
       <parameter id="deviation" value="0.800"/>
@@ -106,78 +95,6 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
          </tr>
       </table>
    </instance>
-   <instance class="PhotometricColorCalibration" version="3" id="PCC_instance">
-      <parameter id="applyCalibration" value="true"/>
-      <parameter id="whiteReferenceId">S</parameter>
-      <parameter id="whiteReferenceName">Average Spiral Galaxy</parameter>
-      <parameter id="whiteReferenceSr_JV" value="-0.37433"/>
-      <parameter id="whiteReferenceJB_JV" value="0.28594"/>
-      <parameter id="zeroPointSr_JV" value="-0.14656"/>
-      <parameter id="zeroPointJB_JV" value="-0.42432"/>
-      <parameter id="autoCatalog" value="true"/>
-      <parameter id="catalogId">APASS</parameter>
-      <parameter id="limitMagnitude" value="12.00"/>
-      <parameter id="autoLimitMagnitude" value="true"/>
-      <parameter id="targetSourceCount" value="8000"/>
-      <parameter id="serverURL">https://vizier.cds.unistra.fr/</parameter>
-      <parameter id="psfStructureLayers" value="5"/>
-      <parameter id="saturationThreshold" value="0.75"/>
-      <parameter id="saturationRelative" value="true"/>
-      <parameter id="saturationShrinkFactor" value="0.10"/>
-      <parameter id="psfNoiseLayers" value="1"/>
-      <parameter id="psfHotPixelFilterRadius" value="1"/>
-      <parameter id="psfNoiseReductionFilterRadius" value="0"/>
-      <parameter id="psfMinStructureSize" value="0"/>
-      <parameter id="psfMinSNR" value="40.00"/>
-      <parameter id="psfAllowClusteredSources" value="true"/>
-      <parameter id="psfType" value="PSFType_Auto"/>
-      <parameter id="psfGrowth" value="1.25"/>
-      <parameter id="psfMaxStars" value="24576"/>
-      <parameter id="psfSearchTolerance" value="4.00"/>
-      <parameter id="psfChannelSearchTolerance" value="2.00"/>
-      <parameter id="neutralizeBackground" value="true"/>
-      <parameter id="backgroundReferenceViewId"></parameter>
-      <parameter id="backgroundLow" value="-2.80"/>
-      <parameter id="backgroundHigh" value="2.00"/>
-      <parameter id="backgroundUseROI" value="false"/>
-      <parameter id="backgroundROIX0" value="0"/>
-      <parameter id="backgroundROIY0" value="0"/>
-      <parameter id="backgroundROIX1" value="0"/>
-      <parameter id="backgroundROIY1" value="0"/>
-      <parameter id="generateGraphs" value="true"/>
-      <parameter id="generateStarMaps" value="false"/>
-      <parameter id="generateTextFiles" value="false"/>
-      <parameter id="outputDirectory"></parameter>
-   </instance>
-   <instance class="PixelMath" version="256" id="PixelMath_instance">
-      <parameter id="expression"></parameter>
-      <parameter id="expression1"></parameter>
-      <parameter id="expression2"></parameter>
-      <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="true"/>
-      <parameter id="symbols"></parameter>
-      <parameter id="clearImageCacheAndExit" value="false"/>
-      <parameter id="cacheGeneratedImages" value="false"/>
-      <parameter id="generateOutput" value="true"/>
-      <parameter id="singleThreaded" value="false"/>
-      <parameter id="optimization" value="true"/>
-      <parameter id="use64BitWorkingImage" value="false"/>
-      <parameter id="rescale" value="false"/>
-      <parameter id="rescaleLower" value="0"/>
-      <parameter id="rescaleUpper" value="1"/>
-      <parameter id="truncate" value="true"/>
-      <parameter id="truncateLower" value="0"/>
-      <parameter id="truncateUpper" value="1"/>
-      <parameter id="createNewImage" value="false"/>
-      <parameter id="showNewImage" value="true"/>
-      <parameter id="newImageId"></parameter>
-      <parameter id="newImageWidth" value="0"/>
-      <parameter id="newImageHeight" value="0"/>
-      <parameter id="newImageAlpha" value="false"/>
-      <parameter id="newImageColorSpace" value="SameAsTarget"/>
-      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
-      <table id="outputData" rows="0"/>
-   </instance>
    <instance class="SCNR" version="256" id="SCNR_instance">
       <parameter id="amount" value="1.00"/>
       <parameter id="protectionMethod" value="AverageNeutral"/>
@@ -225,232 +142,6 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="maskHighlightsClipping" value="1.00000"/>
       <parameter id="maskMTF" value="0.43000"/>
    </instance>
-   <instance class="TGVDenoise" version="256" id="TGV_instance">
-      <parameter id="rgbkMode" value="true"/>
-      <parameter id="filterEnabledL" value="true"/>
-      <parameter id="filterEnabledC" value="true"/>
-      <parameter id="strengthL" value="5.00000000"/>
-      <parameter id="strengthC" value="7.00000000"/>
-      <parameter id="edgeProtectionL" value="0.00200000"/>
-      <parameter id="edgeProtectionC" value="0.00300000"/>
-      <parameter id="smoothnessL" value="2.00000000"/>
-      <parameter id="smoothnessC" value="2.00000000"/>
-      <parameter id="maxIterationsL" value="100"/>
-      <parameter id="maxIterationsC" value="100"/>
-      <parameter id="convergenceEnabledL" value="false"/>
-      <parameter id="convergenceEnabledC" value="false"/>
-      <parameter id="convergenceLimitL" value="0.00400000"/>
-      <parameter id="convergenceLimitC" value="0.00400000"/>
-      <parameter id="supportEnabled" value="false"/>
-      <parameter id="supportViewId"></parameter>
-      <parameter id="supportPreview" value="false"/>
-      <parameter id="supportRemovedWaveletLayers" value="0"/>
-      <parameter id="supportShadowsClip" value="0.00000"/>
-      <parameter id="supportHighlightsClip" value="1.00000"/>
-      <parameter id="supportMidtonesBalance" value="0.50000"/>
-   </instance>
-   <instance class="ImageIntegration" version="256" id="ImageIntegration_instance">
-      <table id="images" rows="0"/>
-      <parameter id="inputHints">fits-keywords normalize raw cfa signed-is-physical</parameter>
-      <parameter id="combination" value="Average"/>
-      <parameter id="weightMode" value="PSFSignalWeight"/>
-      <parameter id="weightKeyword"></parameter>
-      <parameter id="weightScale" value="WeightScale_BWMV"/>
-      <parameter id="minWeight" value="0.005000"/>
-      <parameter id="csvWeights"></parameter>
-      <parameter id="adaptiveGridSize" value="16"/>
-      <parameter id="adaptiveNoScale" value="false"/>
-      <parameter id="ignoreNoiseKeywords" value="false"/>
-      <parameter id="normalization" value="AdditiveWithScaling"/>
-      <parameter id="rejection" value="NoRejection"/>
-      <parameter id="rejectionNormalization" value="Scale"/>
-      <parameter id="minMaxLow" value="1"/>
-      <parameter id="minMaxHigh" value="1"/>
-      <parameter id="pcClipLow" value="0.200"/>
-      <parameter id="pcClipHigh" value="0.100"/>
-      <parameter id="sigmaLow" value="4.000"/>
-      <parameter id="sigmaHigh" value="3.000"/>
-      <parameter id="winsorizationCutoff" value="5.000"/>
-      <parameter id="linearFitLow" value="5.000"/>
-      <parameter id="linearFitHigh" value="4.000"/>
-      <parameter id="esdOutliersFraction" value="0.30"/>
-      <parameter id="esdAlpha" value="0.05"/>
-      <parameter id="esdLowRelaxation" value="1.00"/>
-      <parameter id="rcrLimit" value="0.10"/>
-      <parameter id="ccdGain" value="1.00"/>
-      <parameter id="ccdReadNoise" value="10.00"/>
-      <parameter id="ccdScaleNoise" value="0.00"/>
-      <parameter id="clipLow" value="true"/>
-      <parameter id="clipHigh" value="true"/>
-      <parameter id="rangeClipLow" value="true"/>
-      <parameter id="rangeLow" value="0.000000"/>
-      <parameter id="rangeClipHigh" value="false"/>
-      <parameter id="rangeHigh" value="0.980000"/>
-      <parameter id="mapRangeRejection" value="true"/>
-      <parameter id="reportRangeRejection" value="false"/>
-      <parameter id="largeScaleClipLow" value="false"/>
-      <parameter id="largeScaleClipLowProtectedLayers" value="2"/>
-      <parameter id="largeScaleClipLowGrowth" value="2"/>
-      <parameter id="largeScaleClipHigh" value="false"/>
-      <parameter id="largeScaleClipHighProtectedLayers" value="2"/>
-      <parameter id="largeScaleClipHighGrowth" value="2"/>
-      <parameter id="generate64BitResult" value="false"/>
-      <parameter id="generateRejectionMaps" value="true"/>
-      <parameter id="generateIntegratedImage" value="true"/>
-      <parameter id="generateDrizzleData" value="false"/>
-      <parameter id="closePreviousImages" value="false"/>
-      <parameter id="bufferSizeMB" value="16"/>
-      <parameter id="stackSizeMB" value="1024"/>
-      <parameter id="autoMemorySize" value="true"/>
-      <parameter id="autoMemoryLimit" value="0.75"/>
-      <parameter id="useROI" value="false"/>
-      <parameter id="roiX0" value="0"/>
-      <parameter id="roiY0" value="0"/>
-      <parameter id="roiX1" value="0"/>
-      <parameter id="roiY1" value="0"/>
-      <parameter id="useCache" value="true"/>
-      <parameter id="evaluateSNR" value="true"/>
-      <parameter id="noiseEvaluationAlgorithm" value="NoiseEvaluation_MRS"/>
-      <parameter id="mrsMinDataFraction" value="0.010"/>
-      <parameter id="psfStructureLayers" value="5"/>
-      <parameter id="psfType" value="PSFType_Moffat4"/>
-      <parameter id="subtractPedestals" value="false"/>
-      <parameter id="truncateOnOutOfRange" value="false"/>
-      <parameter id="noGUIMessages" value="true"/>
-      <parameter id="showImages" value="true"/>
-      <parameter id="useFileThreads" value="true"/>
-      <parameter id="fileThreadOverload" value="1.00"/>
-      <parameter id="useBufferThreads" value="true"/>
-      <parameter id="maxBufferThreads" value="0"/>
-      <parameter id="integrationImageId"></parameter>
-      <parameter id="lowRejectionMapImageId"></parameter>
-      <parameter id="highRejectionMapImageId"></parameter>
-      <parameter id="slopeMapImageId"></parameter>
-      <parameter id="numberOfChannels" value="0"/>
-      <parameter id="numberOfPixels" value="0"/>
-      <parameter id="totalPixels" value="0"/>
-      <parameter id="outputRangeLow" value="0"/>
-      <parameter id="outputRangeHigh" value="0"/>
-      <parameter id="totalRejectedLowRK" value="0"/>
-      <parameter id="totalRejectedLowG" value="0"/>
-      <parameter id="totalRejectedLowB" value="0"/>
-      <parameter id="totalRejectedHighRK" value="0"/>
-      <parameter id="totalRejectedHighG" value="0"/>
-      <parameter id="totalRejectedHighB" value="0"/>
-      <parameter id="finalNoiseEstimateRK" value="0.000e+00"/>
-      <parameter id="finalNoiseEstimateG" value="0.000e+00"/>
-      <parameter id="finalNoiseEstimateB" value="0.000e+00"/>
-      <parameter id="finalNoiseScaleEstimateLowRK" value="0.000000e+00"/>
-      <parameter id="finalNoiseScaleEstimateLowG" value="0.000000e+00"/>
-      <parameter id="finalNoiseScaleEstimateLowB" value="0.000000e+00"/>
-      <parameter id="finalNoiseScaleEstimateHighRK" value="0.000000e+00"/>
-      <parameter id="finalNoiseScaleEstimateHighG" value="0.000000e+00"/>
-      <parameter id="finalNoiseScaleEstimateHighB" value="0.000000e+00"/>
-      <parameter id="finalNoiseAlgorithmRK"></parameter>
-      <parameter id="finalNoiseAlgorithmG"></parameter>
-      <parameter id="finalNoiseAlgorithmB"></parameter>
-      <parameter id="finalScaleEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalScaleEstimateG" value="0.0000e+00"/>
-      <parameter id="finalScaleEstimateB" value="0.0000e+00"/>
-      <parameter id="finalLocationEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalLocationEstimateG" value="0.0000e+00"/>
-      <parameter id="finalLocationEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalFluxEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalFluxEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalFluxEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalPowerFluxEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalPowerFluxEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalPowerFluxEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanFluxEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanFluxEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanFluxEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanPowerFluxEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanPowerFluxEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFTotalMeanPowerFluxEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFMStarEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFMStarEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFMStarEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFNStarEstimateRK" value="0.0000e+00"/>
-      <parameter id="finalPSFNStarEstimateG" value="0.0000e+00"/>
-      <parameter id="finalPSFNStarEstimateB" value="0.0000e+00"/>
-      <parameter id="finalPSFCountRK" value="0"/>
-      <parameter id="finalPSFCountG" value="0"/>
-      <parameter id="finalPSFCountB" value="0"/>
-      <parameter id="referenceNoiseReductionRK" value="0.0000"/>
-      <parameter id="referenceNoiseReductionG" value="0.0000"/>
-      <parameter id="referenceNoiseReductionB" value="0.0000"/>
-      <parameter id="medianNoiseReductionRK" value="0.0000"/>
-      <parameter id="medianNoiseReductionG" value="0.0000"/>
-      <parameter id="medianNoiseReductionB" value="0.0000"/>
-      <parameter id="referenceSNRIncrementRK" value="0.0000"/>
-      <parameter id="referenceSNRIncrementG" value="0.0000"/>
-      <parameter id="referenceSNRIncrementB" value="0.0000"/>
-      <parameter id="averageSNRIncrementRK" value="0.0000"/>
-      <parameter id="averageSNRIncrementG" value="0.0000"/>
-      <parameter id="averageSNRIncrementB" value="0.0000"/>
-      <table id="imageData" rows="0"/>
-   </instance>
-   <instance class="DrizzleIntegration" version="256" id="DrizzleIntegration_instance">
-      <table id="inputData" rows="0"/>
-      <parameter id="inputHints">fits-keywords normalize raw cfa signed-is-physical</parameter>
-      <parameter id="inputDirectory"></parameter>
-      <parameter id="scale" value="2.00"/>
-      <parameter id="dropShrink" value="0.90"/>
-      <parameter id="kernelFunction" value="Kernel_Square"/>
-      <parameter id="kernelGridSize" value="16"/>
-      <parameter id="originX" value="0.50"/>
-      <parameter id="originY" value="0.50"/>
-      <parameter id="enableCFA" value="false"/>
-      <parameter id="cfaPattern"></parameter>
-      <parameter id="enableRejection" value="true"/>
-      <parameter id="enableImageWeighting" value="true"/>
-      <parameter id="enableSurfaceSplines" value="true"/>
-      <parameter id="enableLocalDistortion" value="true"/>
-      <parameter id="enableLocalNormalization" value="true"/>
-      <parameter id="enableAdaptiveNormalization" value="false"/>
-      <parameter id="useROI" value="false"/>
-      <parameter id="roiX0" value="0"/>
-      <parameter id="roiY0" value="0"/>
-      <parameter id="roiX1" value="0"/>
-      <parameter id="roiY1" value="0"/>
-      <parameter id="closePreviousImages" value="false"/>
-      <parameter id="truncateOnOutOfRange" value="false"/>
-      <parameter id="noGUIMessages" value="true"/>
-      <parameter id="onError" value="Continue"/>
-      <parameter id="integrationImageId"></parameter>
-      <parameter id="weightImageId"></parameter>
-      <parameter id="numberOfChannels" value="0"/>
-      <parameter id="outputPixels" value="0"/>
-      <parameter id="integratedPixels" value="0"/>
-      <parameter id="outputRangeLow" value="0"/>
-      <parameter id="outputRangeHigh" value="0"/>
-      <parameter id="totalRejectedLowRK" value="0"/>
-      <parameter id="totalRejectedLowG" value="0"/>
-      <parameter id="totalRejectedLowB" value="0"/>
-      <parameter id="totalRejectedHighRK" value="0"/>
-      <parameter id="totalRejectedHighG" value="0"/>
-      <parameter id="totalRejectedHighB" value="0"/>
-      <parameter id="totalData" value="0.000"/>
-      <table id="imageData" rows="0"/>
-   </instance>
-   <instance class="HDRComposition" version="256" id="HDRComposition_instance">
-      <table id="images" rows="0"/>
-      <parameter id="inputHints"></parameter>
-      <parameter id="maskBinarizingThreshold" value="0.8000"/>
-      <parameter id="maskSmoothness" value="7"/>
-      <parameter id="maskGrowth" value="1"/>
-      <parameter id="replaceLargeScales" value="0"/>
-      <parameter id="autoExposures" value="true"/>
-      <parameter id="rejectBlack" value="true"/>
-      <parameter id="useFittingRegion" value="false"/>
-      <parameter id="fittingRectX0" value="0"/>
-      <parameter id="fittingRectY0" value="0"/>
-      <parameter id="fittingRectX1" value="0"/>
-      <parameter id="fittingRectY1" value="0"/>
-      <parameter id="generate64BitResult" value="true"/>
-      <parameter id="outputMasks" value="true"/>
-      <parameter id="closePreviousImages" value="false"/>
-   </instance>
    <instance class="ScreenTransferFunction" version="256" id="STF_instance">
       <table id="STF" rows="4">
          <tr>
@@ -484,7 +175,7 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       </table>
       <parameter id="interaction" value="SeparateChannels"/>
    </instance>
-   <instance class="DynamicCrop" version="2" id="DCrop_instance">
+   <instance class="DynamicCrop" version="2" id="DynamicCrop_instance">
       <parameter id="refWidth" value="1"/>
       <parameter id="refHeight" value="1"/>
       <parameter id="outWidth" value="1.00"/>
@@ -558,104 +249,9 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="mode" value="RescaleAsNeeded"/>
       <parameter id="targetBackground" value="0.0010000"/>
    </instance>
-   <instance class="PixelMath" version="256" id="AddStars_instance">
-      <time start="2023-08-30T02:47:01.561Z" span="0.0720459"/>
-      <parameter id="expression">$T+stars</parameter>
-      <parameter id="expression1"></parameter>
-      <parameter id="expression2"></parameter>
-      <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="true"/>
-      <parameter id="symbols"></parameter>
-      <parameter id="clearImageCacheAndExit" value="false"/>
-      <parameter id="cacheGeneratedImages" value="false"/>
-      <parameter id="generateOutput" value="true"/>
-      <parameter id="singleThreaded" value="false"/>
-      <parameter id="optimization" value="true"/>
-      <parameter id="use64BitWorkingImage" value="false"/>
-      <parameter id="rescale" value="false"/>
-      <parameter id="rescaleLower" value="0"/>
-      <parameter id="rescaleUpper" value="1"/>
-      <parameter id="truncate" value="true"/>
-      <parameter id="truncateLower" value="0"/>
-      <parameter id="truncateUpper" value="1"/>
-      <parameter id="createNewImage" value="false"/>
-      <parameter id="showNewImage" value="true"/>
-      <parameter id="newImageId"></parameter>
-      <parameter id="newImageWidth" value="0"/>
-      <parameter id="newImageHeight" value="0"/>
-      <parameter id="newImageAlpha" value="false"/>
-      <parameter id="newImageColorSpace" value="SameAsTarget"/>
-      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
-      <table id="outputData" rows="0"/>
-   </instance>
-   <instance class="PixelMath" version="256" id="SHOCombination_instance">
-      <parameter id="expression">(O^~O)*S+~(O^~O)*H</parameter>
-      <parameter id="expression1">((O*H)^~(O*H))*H+~((O*H)^~(O*H))*O</parameter>
-      <parameter id="expression2">O</parameter>
-      <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="false"/>
-      <parameter id="symbols"></parameter>
-      <parameter id="clearImageCacheAndExit" value="false"/>
-      <parameter id="cacheGeneratedImages" value="false"/>
-      <parameter id="generateOutput" value="true"/>
-      <parameter id="singleThreaded" value="false"/>
-      <parameter id="optimization" value="true"/>
-      <parameter id="use64BitWorkingImage" value="false"/>
-      <parameter id="rescale" value="false"/>
-      <parameter id="rescaleLower" value="0"/>
-      <parameter id="rescaleUpper" value="1"/>
-      <parameter id="truncate" value="true"/>
-      <parameter id="truncateLower" value="0"/>
-      <parameter id="truncateUpper" value="1"/>
-      <parameter id="createNewImage" value="true"/>
-      <parameter id="showNewImage" value="true"/>
-      <parameter id="newImageId"></parameter>
-      <parameter id="newImageWidth" value="0"/>
-      <parameter id="newImageHeight" value="0"/>
-      <parameter id="newImageAlpha" value="false"/>
-      <parameter id="newImageColorSpace" value="SameAsTarget"/>
-      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
-      <table id="outputData" rows="0"/>
-   </instance>
-   <instance class="PixelMath" version="256" id="HOCombination_instance">
-      <parameter id="expression">H</parameter>
-      <parameter id="expression1">((O*H)^~(O*H))*H+~((O*H)^~(O*H))*O</parameter>
-      <parameter id="expression2">O</parameter>
-      <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="false"/>
-      <parameter id="symbols"></parameter>
-      <parameter id="clearImageCacheAndExit" value="false"/>
-      <parameter id="cacheGeneratedImages" value="false"/>
-      <parameter id="generateOutput" value="true"/>
-      <parameter id="singleThreaded" value="false"/>
-      <parameter id="optimization" value="true"/>
-      <parameter id="use64BitWorkingImage" value="false"/>
-      <parameter id="rescale" value="false"/>
-      <parameter id="rescaleLower" value="0"/>
-      <parameter id="rescaleUpper" value="1"/>
-      <parameter id="truncate" value="true"/>
-      <parameter id="truncateLower" value="0"/>
-      <parameter id="truncateUpper" value="1"/>
-      <parameter id="createNewImage" value="true"/>
-      <parameter id="showNewImage" value="true"/>
-      <parameter id="newImageId"></parameter>
-      <parameter id="newImageWidth" value="0"/>
-      <parameter id="newImageHeight" value="0"/>
-      <parameter id="newImageAlpha" value="false"/>
-      <parameter id="newImageColorSpace" value="SameAsTarget"/>
-      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
-      <table id="outputData" rows="0"/>
-   </instance>
    <instance class="FastRotation" version="256" id="FastRotation_instance">
       <parameter id="mode" value="Rotate180"/>
       <parameter id="noGUIMessages" value="false"/>
-   </instance>
-   <instance class="LocalHistogramEqualization" version="256" id="LocalHistogramEquilization_instance">
-      <parameter id="radius" value="32"/>
-      <parameter id="histogramBins" value="Bit8"/>
-      <parameter id="slopeLimit" value="2.0"/>
-      <parameter id="amount" value="0.290"/>
-      <parameter id="circularKernel" value="true"/>
    </instance>
    <instance class="MultiscaleMedianTransform" version="256" id="MMTNR_instance">
       <mask id="iris_L" inverted="true" deleted="true"/>
@@ -723,7 +319,7 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="toChrominance" value="true"/>
       <parameter id="linear" value="false"/>
    </instance>
-   <instance class="ExponentialTransformation" version="256" id="ExponentialTransformation_instance">
+   <instance class="ExponentialTransformation" version="256" id="ExpTransform_instance">
       <parameter id="functionType" value="PIP"/>
       <parameter id="order" value="1.00"/>
       <parameter id="sigma" value="0.00"/>
@@ -759,19 +355,7 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="gammaCorrection" value="false"/>
       <parameter id="noGUIMessages" value="false"/>
    </instance>
-   <instance class="UnsharpMask" version="256" id="UnsharpMask_instance">
-      <parameter id="sigma" value="2.00"/>
-      <parameter id="amount" value="0.80"/>
-      <parameter id="useLuminance" value="true"/>
-      <parameter id="linear" value="false"/>
-      <parameter id="deringing" value="false"/>
-      <parameter id="deringingDark" value="0.1000"/>
-      <parameter id="deringingBright" value="0.0000"/>
-      <parameter id="outputDeringingMaps" value="false"/>
-      <parameter id="rangeLow" value="0.0000000"/>
-      <parameter id="rangeHigh" value="0.0000000"/>
-   </instance>
-   <instance class="HDRMultiscaleTransform" version="256" id="HDRMultiscaleTransform_instance">
+   <instance class="HDRMultiscaleTransform" version="256" id="HDRMT_instance">
       <parameter id="numberOfLayers" value="6"/>
       <parameter id="numberOfIterations" value="1"/>
       <parameter id="invertedIterations" value="true"/>
@@ -791,18 +375,6 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="toLightness" value="false"/>
       <parameter id="preserveHue" value="false"/>
       <parameter id="lightnessMask" value="false"/>
-   </instance>
-   <instance class="NarrowbandNormalization" version="256" id="NarrowbandNormalization_instance">
-      <parameter id="palette" value="Palette_HOO"/>
-      <parameter id="lightness" value="Lightness_Off"/>
-      <parameter id="blendMode" value="Blend_Mode1"/>
-      <parameter id="haBlend" value="0.000"/>
-      <parameter id="scnr" value="0.000"/>
-      <parameter id="o3Boost" value="0.000"/>
-      <parameter id="s2Boost" value="0.000"/>
-      <parameter id="ShadowPointment" value="0.000"/>
-      <parameter id="highlightReduction" value="0.000"/>
-      <parameter id="brightness" value="0.000"/>
    </instance>
    <instance class="SpectrophotometricColorCalibration" version="1" id="SPCC_instance">
       <parameter id="applyCalibration" value="true"/>
@@ -864,7 +436,7 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="rejectLow" value="0.000000"/>
       <parameter id="rejectHigh" value="0.920000"/>
    </instance>
-   <instance class="ChannelCombination" version="256" id="ChannelCombination_instance">
+   <instance class="ChannelCombination" version="256" id="CC_instance">
       <parameter id="colorSpace" value="RGB"/>
       <table id="channels" rows="3">
          <tr>
@@ -882,195 +454,7 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       </table>
       <parameter id="inheritAstrometricSolution" value="true"/>
    </instance>
-   <instance class="PixelMath" version="256" id="addBG_instance">
-      <parameter id="expression">b+g</parameter>
-      <parameter id="expression1"></parameter>
-      <parameter id="expression2"></parameter>
-      <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="true"/>
-      <parameter id="symbols"></parameter>
-      <parameter id="clearImageCacheAndExit" value="false"/>
-      <parameter id="cacheGeneratedImages" value="false"/>
-      <parameter id="generateOutput" value="true"/>
-      <parameter id="singleThreaded" value="false"/>
-      <parameter id="optimization" value="true"/>
-      <parameter id="use64BitWorkingImage" value="false"/>
-      <parameter id="rescale" value="false"/>
-      <parameter id="rescaleLower" value="0"/>
-      <parameter id="rescaleUpper" value="1"/>
-      <parameter id="truncate" value="true"/>
-      <parameter id="truncateLower" value="0"/>
-      <parameter id="truncateUpper" value="1"/>
-      <parameter id="createNewImage" value="true"/>
-      <parameter id="showNewImage" value="true"/>
-      <parameter id="newImageId"></parameter>
-      <parameter id="newImageWidth" value="0"/>
-      <parameter id="newImageHeight" value="0"/>
-      <parameter id="newImageAlpha" value="false"/>
-      <parameter id="newImageColorSpace" value="SameAsTarget"/>
-      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
-      <table id="outputData" rows="0"/>
-   </instance>
-   <instance class="CurvesTransformation" version="256" id="CurvesTransformation_instance">
-      <table id="R" rows="5">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.25000"/>
-            <td id="y" value="0.25000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.50000"/>
-            <td id="y" value="0.50000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.75000"/>
-            <td id="y" value="0.75000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Rt" value="AkimaSubsplines"/>
-      <table id="G" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Gt" value="AkimaSubsplines"/>
-      <table id="B" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Bt" value="AkimaSubsplines"/>
-      <table id="K" rows="5">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.25000"/>
-            <td id="y" value="0.25000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.50000"/>
-            <td id="y" value="0.50000"/>
-         </tr>
-         <tr>
-            <td id="x" value="0.75000"/>
-            <td id="y" value="0.75000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Kt" value="AkimaSubsplines"/>
-      <table id="A" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="At" value="AkimaSubsplines"/>
-      <table id="L" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Lt" value="AkimaSubsplines"/>
-      <table id="a" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="at" value="AkimaSubsplines"/>
-      <table id="b" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="bt" value="AkimaSubsplines"/>
-      <table id="c" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="ct" value="AkimaSubsplines"/>
-      <table id="H" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="Ht" value="AkimaSubsplines"/>
-      <table id="S" rows="2">
-         <tr>
-            <td id="x" value="0.00000"/>
-            <td id="y" value="0.00000"/>
-         </tr>
-         <tr>
-            <td id="x" value="1.00000"/>
-            <td id="y" value="1.00000"/>
-         </tr>
-      </table>
-      <parameter id="St" value="AkimaSubsplines"/>
-   </instance>
-   <instance class="BlurXTerminator" version="256" id="blurx_instance">
-      <parameter id="ai_file">BlurXTerminator.4.pb</parameter>
-      <parameter id="correct_only" value="false"/>
-      <parameter id="correct_first" value="false"/>
-      <parameter id="nonstellar_then_stellar" value="false"/>
-      <parameter id="lum_only" value="false"/>
-      <parameter id="sharpen_stars" value="0.00"/>
-      <parameter id="adjust_halos" value="0.00"/>
-      <parameter id="nonstellar_psf_diameter" value="0.00"/>
-      <parameter id="auto_nonstellar_psf" value="true"/>
-      <parameter id="sharpen_nonstellar" value="0.70"/>
-   </instance>
-   <instance class="StarAlignment" version="4" id="StarAlignment_instance">
+   <instance class="StarAlignment" version="4" id="StarAlign_instance">
       <parameter id="structureLayers" value="5"/>
       <parameter id="noiseLayers" value="0"/>
       <parameter id="hotPixelFilterRadius" value="1"/>
@@ -1145,12 +529,477 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="memoryLoadLimit" value="0.85"/>
       <table id="outputData" rows="0"/>
    </instance>
-   <instance class="PixelMath" version="256" id="LRGBStarFix_instance">
-      <parameter id="expression">iif($T[0] &lt; $T[1]*(1/2), ($T[1]*0.5 + $T[2]*0.5), $T[0])</parameter>
-      <parameter id="expression1">iif($T[1] &lt; $T[0]*(1/2), ($T[0]*0.5 + $T[2]*0.5), $T[1])</parameter>
-      <parameter id="expression2">iif($T[2] &lt; $T[1]*(1/2), ($T[1]*0.5 + $T[0]*0.5), $T[2])</parameter>
+   <instance class="DeepSNR" version="256" id="DeepSNR_instance">
+      <parameter id="linear" value="true"/>
+      <parameter id="amount" value="1"/>
+      <parameter id="shadows_clipping" value="-2.80"/>
+      <parameter id="target_background" value="0.25"/>
+   </instance>
+   <instance class="StarNet2" version="256" id="StarNet2_instance">
+      <parameter id="stride" value="defStride"/>
+      <parameter id="mask" value="true"/>
+      <parameter id="linear" value="true"/>
+      <parameter id="upsample" value="false"/>
+      <parameter id="shadows_clipping" value="-2.80"/>
+      <parameter id="target_background" value="0.25"/>
+   </instance>
+   <instance class="Convolution" version="256" id="Convolution_instance">
+      <parameter id="mode" value="Parametric"/>
+      <parameter id="sigma" value="2.00"/>
+      <parameter id="shape" value="2.00"/>
+      <parameter id="aspectRatio" value="1.00"/>
+      <parameter id="rotationAngle" value="0.00"/>
+      <parameter id="filterSource"></parameter>
+      <parameter id="rescaleHighPass" value="false"/>
+      <parameter id="viewId"></parameter>
+   </instance>
+   <instance class="GradientCorrection" version="1" id="GC_instance">
+      <time start="2024-10-13T17:20:54.433Z" span="9.3233196"/>
+      <parameter id="reference" value="0.50"/>
+      <parameter id="lowThreshold" value="0.20"/>
+      <parameter id="lowTolerance" value="0.50"/>
+      <parameter id="highThreshold" value="0.05"/>
+      <parameter id="highTolerance" value="0.00"/>
+      <parameter id="iterations" value="15"/>
+      <parameter id="scale" value="5.00"/>
+      <parameter id="smoothness" value="0.40"/>
+      <parameter id="downsamplingFactor" value="16"/>
+      <parameter id="protection" value="true"/>
+      <parameter id="protectionThreshold" value="0.10"/>
+      <parameter id="protectionAmount" value="0.50"/>
+      <parameter id="protectionSmoothingFactor" value="16"/>
+      <parameter id="lowClippingLevel" value="0.000076"/>
+      <parameter id="automaticConvergence" value="true"/>
+      <parameter id="convergenceLimit" value="0.00001000"/>
+      <parameter id="maxIterations" value="10"/>
+      <parameter id="useSimplification" value="false"/>
+      <parameter id="simplificationDegree" value="1"/>
+      <parameter id="simplificationScale" value="1024"/>
+      <parameter id="generateSimpleModel" value="false"/>
+      <parameter id="generateGradientModel" value="true"/>
+      <parameter id="generateProtectionMasks" value="false"/>
+      <parameter id="gridSamplingDelta" value="16"/>
+   </instance>
+   <instance class="StarXTerminator" version="256" id="StarX_instance">
+      <time start="2024-10-09T01:41:28.943Z" span="62.114626"/>
+      <parameter id="ai_file">StarXTerminator.lite.nonoise.11.pb</parameter>
+      <parameter id="stars" value="true"/>
+      <parameter id="unscreen" value="false"/>
+      <parameter id="overlap" value="0.20"/>
+   </instance>
+   <instance class="CurvesTransformation" version="256" id="Curves_instance">
+      <table id="R" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Rt" value="AkimaSubsplines"/>
+      <table id="G" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Gt" value="AkimaSubsplines"/>
+      <table id="B" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Bt" value="AkimaSubsplines"/>
+      <table id="K" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Kt" value="AkimaSubsplines"/>
+      <table id="A" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="At" value="AkimaSubsplines"/>
+      <table id="L" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Lt" value="AkimaSubsplines"/>
+      <table id="a" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="at" value="AkimaSubsplines"/>
+      <table id="b" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="bt" value="AkimaSubsplines"/>
+      <table id="c" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="ct" value="AkimaSubsplines"/>
+      <table id="H" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="Ht" value="AkimaSubsplines"/>
+      <table id="S" rows="5">
+         <tr>
+            <td id="x" value="0.00000"/>
+            <td id="y" value="0.00000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.25000"/>
+            <td id="y" value="0.25000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.50000"/>
+            <td id="y" value="0.50000"/>
+         </tr>
+         <tr>
+            <td id="x" value="0.75000"/>
+            <td id="y" value="0.75000"/>
+         </tr>
+         <tr>
+            <td id="x" value="1.00000"/>
+            <td id="y" value="1.00000"/>
+         </tr>
+      </table>
+      <parameter id="St" value="AkimaSubsplines"/>
+   </instance>
+   <instance class="ImageContainer" id="lrgbC_instance">
+      <policies onError="continue"/>
+      <flags dontOverwrite="true" overrideMasks="true" continueAfterAbort="true"/>
+      <outputTemplate>&amp;filename;_&amp;datetime;&amp;extension;</outputTemplate>
+      <view enabled="true">l</view>
+      <view enabled="true">r</view>
+      <view enabled="true">b</view>
+      <view enabled="true">g</view>
+   </instance>
+   <instance class="ImageContainer" id="rgbC_instance">
+      <policies onError="continue"/>
+      <flags dontOverwrite="true" overrideMasks="true" continueAfterAbort="true"/>
+      <outputTemplate>&amp;filename;_&amp;datetime;&amp;extension;</outputTemplate>
+      <view enabled="true">r</view>
+      <view enabled="true">b</view>
+      <view enabled="true">g</view>
+   </instance>
+   <instance class="ImageContainer" id="shoC_instance">
+      <policies onError="continue"/>
+      <flags dontOverwrite="true" overrideMasks="true" continueAfterAbort="true"/>
+      <outputTemplate>&amp;filename;_&amp;datetime;&amp;extension;</outputTemplate>
+      <view enabled="true">s</view>
+      <view enabled="true">o</view>
+      <view enabled="true">h</view>
+   </instance>
+   <instance class="LocalHistogramEqualization" version="256" id="LHE_instance">
+      <parameter id="radius" value="32"/>
+      <parameter id="histogramBins" value="Bit8"/>
+      <parameter id="slopeLimit" value="2.0"/>
+      <parameter id="amount" value="0.100"/>
+      <parameter id="circularKernel" value="true"/>
+   </instance>
+   <instance class="BlurXTerminator" version="256" id="BlurX_instance">
+      <parameter id="ai_file">BlurXTerminator.4.pb</parameter>
+      <parameter id="correct_only" value="false"/>
+      <parameter id="correct_first" value="false"/>
+      <parameter id="nonstellar_then_stellar" value="false"/>
+      <parameter id="lum_only" value="false"/>
+      <parameter id="sharpen_stars" value="0.00"/>
+      <parameter id="adjust_halos" value="0.00"/>
+      <parameter id="nonstellar_psf_diameter" value="0.00"/>
+      <parameter id="auto_nonstellar_psf" value="true"/>
+      <parameter id="sharpen_nonstellar" value="0.50"/>
+   </instance>
+   <instance class="NoiseXTerminator" version="256" id="NoiseX_instance">
+      <parameter id="ai_file">NoiseXTerminator.2.pb</parameter>
+      <parameter id="denoise" value="0.50"/>
+      <parameter id="detail" value="0.15"/>
+   </instance>
+   <instance class="AutomaticBackgroundExtractor" version="256" id="SubD1_instance">
+      <time start="2024-10-14T03:22:46.550Z" span="2.2527455"/>
+      <parameter id="tolerance" value="1.000"/>
+      <parameter id="deviation" value="0.800"/>
+      <parameter id="unbalance" value="1.800"/>
+      <parameter id="minBoxFraction" value="0.050"/>
+      <parameter id="maxBackground" value="1.0000"/>
+      <parameter id="minBackground" value="0.0000"/>
+      <parameter id="useBrightnessLimits" value="false"/>
+      <parameter id="polyDegree" value="1"/>
+      <parameter id="boxSize" value="5"/>
+      <parameter id="boxSeparation" value="5"/>
+      <parameter id="modelImageSampleFormat" value="f32"/>
+      <parameter id="abeDownsample" value="2.00"/>
+      <parameter id="writeSampleBoxes" value="false"/>
+      <parameter id="justTrySamples" value="false"/>
+      <parameter id="targetCorrection" value="Subtract"/>
+      <parameter id="normalize" value="true"/>
+      <parameter id="discardModel" value="false"/>
+      <parameter id="replaceTarget" value="true"/>
+      <parameter id="correctedImageId"></parameter>
+      <parameter id="correctedImageSampleFormat" value="SameAsTarget"/>
+      <parameter id="verboseCoefficients" value="false"/>
+      <parameter id="compareModel" value="false"/>
+      <parameter id="compareFactor" value="10.00"/>
+   </instance>
+   <instance class="AutomaticBackgroundExtractor" version="256" id="DivD2_instance">
+      <parameter id="tolerance" value="1.000"/>
+      <parameter id="deviation" value="0.800"/>
+      <parameter id="unbalance" value="1.800"/>
+      <parameter id="minBoxFraction" value="0.050"/>
+      <parameter id="maxBackground" value="1.0000"/>
+      <parameter id="minBackground" value="0.0000"/>
+      <parameter id="useBrightnessLimits" value="false"/>
+      <parameter id="polyDegree" value="2"/>
+      <parameter id="boxSize" value="5"/>
+      <parameter id="boxSeparation" value="5"/>
+      <parameter id="modelImageSampleFormat" value="f32"/>
+      <parameter id="abeDownsample" value="2.00"/>
+      <parameter id="writeSampleBoxes" value="false"/>
+      <parameter id="justTrySamples" value="false"/>
+      <parameter id="targetCorrection" value="Divide"/>
+      <parameter id="normalize" value="true"/>
+      <parameter id="discardModel" value="false"/>
+      <parameter id="replaceTarget" value="true"/>
+      <parameter id="correctedImageId"></parameter>
+      <parameter id="correctedImageSampleFormat" value="SameAsTarget"/>
+      <parameter id="verboseCoefficients" value="false"/>
+      <parameter id="compareModel" value="false"/>
+      <parameter id="compareFactor" value="10.00"/>
+   </instance>
+   <instance class="ChannelCombination" version="256" id="lumc_instance">
+      <parameter id="colorSpace" value="CIELab"/>
+      <table id="channels" rows="3">
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="id">l</td>
+         </tr>
+         <tr>
+            <td id="enabled" value="false"/>
+            <td id="id"></td>
+         </tr>
+         <tr>
+            <td id="enabled" value="false"/>
+            <td id="id"></td>
+         </tr>
+      </table>
+      <parameter id="inheritAstrometricSolution" value="true"/>
+   </instance>
+   <instance class="TGVDenoise" version="256" id="TGV_instance">
+      <parameter id="rgbkMode" value="true"/>
+      <parameter id="filterEnabledL" value="true"/>
+      <parameter id="filterEnabledC" value="true"/>
+      <parameter id="strengthL" value="5.00000000"/>
+      <parameter id="strengthC" value="7.00000000"/>
+      <parameter id="edgeProtectionL" value="0.00200000"/>
+      <parameter id="edgeProtectionC" value="0.00300000"/>
+      <parameter id="smoothnessL" value="2.00000000"/>
+      <parameter id="smoothnessC" value="2.00000000"/>
+      <parameter id="maxIterationsL" value="100"/>
+      <parameter id="maxIterationsC" value="100"/>
+      <parameter id="convergenceEnabledL" value="false"/>
+      <parameter id="convergenceEnabledC" value="false"/>
+      <parameter id="convergenceLimitL" value="0.00400000"/>
+      <parameter id="convergenceLimitC" value="0.00400000"/>
+      <parameter id="supportEnabled" value="false"/>
+      <parameter id="supportViewId"></parameter>
+      <parameter id="supportPreview" value="false"/>
+      <parameter id="supportRemovedWaveletLayers" value="0"/>
+      <parameter id="supportShadowsClip" value="0.00000"/>
+      <parameter id="supportHighlightsClip" value="1.00000"/>
+      <parameter id="supportMidtonesBalance" value="0.50000"/>
+   </instance>
+   <instance class="RangeSelection" version="256" id="RangeSelection_instance">
+      <parameter id="lowRange" value="0.000000"/>
+      <parameter id="highRange" value="1.000000"/>
+      <parameter id="fuzziness" value="0.00"/>
+      <parameter id="smoothness" value="0.00"/>
+      <parameter id="screening" value="false"/>
+      <parameter id="toLightness" value="true"/>
+      <parameter id="invert" value="false"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="CrunchBlacks_instance">
+      <time start="2024-10-09T01:16:18.327Z" span="0.0675807"/>
+      <parameter id="expression">0</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
       <parameter id="expression3"></parameter>
-      <parameter id="useSingleExpression" value="false"/>
+      <parameter id="useSingleExpression" value="true"/>
       <parameter id="symbols"></parameter>
       <parameter id="clearImageCacheAndExit" value="false"/>
       <parameter id="cacheGeneratedImages" value="false"/>
@@ -1174,85 +1023,692 @@ Copyright (c) 2003-2024 Pleiades Astrophoto
       <parameter id="newImageSampleFormat" value="SameAsTarget"/>
       <table id="outputData" rows="0"/>
    </instance>
-   <instance class="GradientCorrection" version="1" id="GradientCorrection_instance">
-      <parameter id="reference" value="0.50"/>
-      <parameter id="lowThreshold" value="0.20"/>
-      <parameter id="lowTolerance" value="0.50"/>
-      <parameter id="highThreshold" value="0.05"/>
-      <parameter id="highTolerance" value="0.00"/>
-      <parameter id="iterations" value="15"/>
-      <parameter id="scale" value="5.00"/>
-      <parameter id="smoothness" value="0.40"/>
-      <parameter id="downsamplingFactor" value="16"/>
-      <parameter id="protection" value="true"/>
-      <parameter id="protectionThreshold" value="0.10"/>
-      <parameter id="protectionAmount" value="0.50"/>
-      <parameter id="protectionSmoothingFactor" value="16"/>
-      <parameter id="lowClippingLevel" value="0.000076"/>
-      <parameter id="automaticConvergence" value="false"/>
-      <parameter id="convergenceLimit" value="0.00001000"/>
-      <parameter id="maxIterations" value="10"/>
-      <parameter id="useSimplification" value="false"/>
-      <parameter id="simplificationDegree" value="1"/>
-      <parameter id="simplificationScale" value="1024"/>
-      <parameter id="generateSimpleModel" value="false"/>
-      <parameter id="generateGradientModel" value="false"/>
-      <parameter id="generateProtectionMasks" value="false"/>
-      <parameter id="gridSamplingDelta" value="16"/>
+   <instance class="PixelMath" version="256" id="CrunchWhites_instance">
+      <time start="2024-10-09T01:16:36.578Z" span="0.0688011"/>
+      <parameter id="expression">1</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId"></parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
    </instance>
-   <instance class="DeepSNR" version="256" id="DeepSNR_instance">
+   <instance class="PixelMath" version="256" id="ScreenStars_instance">
+      <parameter id="expression">combine($T,stars,op_screen())</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="true"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">starry</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="UL_02_instance">
+      <time start="2024-10-09T01:41:07.324Z" span="10.377047"/>
+      <parameter id="expression">/*      Unlinked Stretch Test with Curve Adjustment         
+                    by Bill Blanshan                     */
+
+
+Stretch=  0.20 ; //&lt;-- Target background value
+Curve=    1.00 ; //&lt;-- 1= Normal Stretch, &gt;1= Arcsin style
+Clip=      2.8 ; //&lt;-- Increase to prevent shadow clipping
+
+
+/*Drag the bottom left arrow over into the image you want stretched 
+
+
+Notes:  If you are stretching an image that has been denoised, you
+        may need to reduce the &quot;Stretch&quot; value. 
+
+
+Release notes:
+
+1) New Curve feature:  This feature allows you to modify the
+   curve being used, so a value higher than 1, e.g. 1.03, will
+   give you a more &quot;arcsin&quot; style curve thus reducing the highlights.
+   This is helpful on very bright nebula so you don&apos;t blow out
+   the core when stretching.
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E1= min(max(0,med($T)+-Clip*1.4826*mdev($T)),1);
+E2= max(0,($T-E1)/~E1); 
+E3= med($T)-E1;
+E4= min(1,(1/Curve));
+E5= ((Stretch-1)*E3) / ((2*Stretch-1) * E3^E4-Stretch); //MTF value
+E6= ( (E5-1)*E2) / ( (2*E5-1) * E2^E4-E5);
+
+E6</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols">Stretch,Curve,Clip,
+E1,E2,E3,E4,E5,E6,E7,</parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId"></parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="L_02_instance">
+      <parameter id="expression">/*        Linked Stretch Test with Curve Adjustment         
+                    by Bill Blanshan                     */
+
+
+Stretch=  0.20 ; //&lt;-- Target background value
+Curve=    1.00 ; //&lt;-- 1= Normal Stretch, &gt;1= Arcsin style
+Clip=      2.8 ; //&lt;-- Increase to prevent shadow clipping
+
+
+/*Drag the bottom left arrow over into the image you want stretched 
+
+
+Notes:  If you are stretching an image that has been denoised, you
+        may need to reduce the &quot;Stretch&quot; value. 
+
+
+Release notes:
+
+1) New Curve feature:  This feature allows you to modify the
+   curve being used, so a value higher than 1, e.g. 1.03, will
+   give you a more &quot;arcsin&quot; style curve thus reducing the highlights.
+   This is helpful on very bright nebula so you don&apos;t blow out
+   the core when stretching.
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+m = (med($T[0])+med($T[1])+med($T[2]))/3;
+d = (mdev($T[0])+mdev($T[1])+mdev($T[2]))/3;
+E1= min(max(0,m+-Clip*1.4826*d),1);
+E2= max(0,($T-E1)/~E1);
+E3= med($T)-E1;
+E4= min(1,(1/Curve));
+E5= ((Stretch-1)*E3) / ((2*Stretch-1) * E3^E4-Stretch); //MTF value
+E6= ( (E5-1)*E2) / ( (2*E5-1) * E2^E4-E5);
+
+E6</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols">Stretch,Curve,Clip,m,d,
+E1,E2,E3,E4,E5,E6,E7,</parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId"></parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="UL_01_instance">
+      <time start="2024-10-09T01:42:42.007Z" span="10.479107"/>
+      <parameter id="expression">/*      Unlinked Stretch Test with Curve Adjustment         
+                    by Bill Blanshan                     */
+
+
+Stretch=  0.10 ; //&lt;-- Target background value
+Curve=    1.00 ; //&lt;-- 1= Normal Stretch, &gt;1= Arcsin style
+Clip=      2.8 ; //&lt;-- Increase to prevent shadow clipping
+
+
+/*Drag the bottom left arrow over into the image you want stretched 
+
+
+Notes:  If you are stretching an image that has been denoised, you
+        may need to reduce the &quot;Stretch&quot; value. 
+
+
+Release notes:
+
+1) New Curve feature:  This feature allows you to modify the
+   curve being used, so a value higher than 1, e.g. 1.03, will
+   give you a more &quot;arcsin&quot; style curve thus reducing the highlights.
+   This is helpful on very bright nebula so you don&apos;t blow out
+   the core when stretching.
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E1= min(max(0,med($T)+-Clip*1.4826*mdev($T)),1);
+E2= max(0,($T-E1)/~E1); 
+E3= med($T)-E1;
+E4= min(1,(1/Curve));
+E5= ((Stretch-1)*E3) / ((2*Stretch-1) * E3^E4-Stretch); //MTF value
+E6= ( (E5-1)*E2) / ( (2*E5-1) * E2^E4-E5);
+
+E6</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols">Stretch,Curve,Clip,
+E1,E2,E3,E4,E5,E6,E7,</parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId"></parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="L_01_instance">
+      <parameter id="expression">/*        Linked Stretch Test with Curve Adjustment         
+                    by Bill Blanshan                     */
+
+
+Stretch=  0.10 ; //&lt;-- Target background value
+Curve=    1.00 ; //&lt;-- 1= Normal Stretch, &gt;1= Arcsin style
+Clip=      2.8 ; //&lt;-- Increase to prevent shadow clipping
+
+
+/*Drag the bottom left arrow over into the image you want stretched 
+
+
+Notes:  If you are stretching an image that has been denoised, you
+        may need to reduce the &quot;Stretch&quot; value. 
+
+
+Release notes:
+
+1) New Curve feature:  This feature allows you to modify the
+   curve being used, so a value higher than 1, e.g. 1.03, will
+   give you a more &quot;arcsin&quot; style curve thus reducing the highlights.
+   This is helpful on very bright nebula so you don&apos;t blow out
+   the core when stretching.
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+m = (med($T[0])+med($T[1])+med($T[2]))/3;
+d = (mdev($T[0])+mdev($T[1])+mdev($T[2]))/3;
+E1= min(max(0,m+-Clip*1.4826*d),1);
+E2= max(0,($T-E1)/~E1);
+E3= med($T)-E1;
+E4= min(1,(1/Curve));
+E5= ((Stretch-1)*E3) / ((2*Stretch-1) * E3^E4-Stretch); //MTF value
+E6= ( (E5-1)*E2) / ( (2*E5-1) * E2^E4-E5);
+
+E6</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols">Stretch,Curve,Clip,m,d,
+E1,E2,E3,E4,E5,E6,E7,</parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId"></parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="sho_instance">
+      <parameter id="expression">s</parameter>
+      <parameter id="expression1">h</parameter>
+      <parameter id="expression2">o</parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="false"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="true"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">sho</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="RGB"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="PixelMath" version="256" id="rgb_instance">
+      <parameter id="expression">r</parameter>
+      <parameter id="expression1">g</parameter>
+      <parameter id="expression2">b</parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="false"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="true"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">rgb</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="RGB"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="MultiscaleMedianTransform" version="256" id="NukeChrominance_instance">
+      <table id="layers" rows="9">
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="10.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="9.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="8.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="7.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="6.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="5.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="4.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="true"/>
+            <td id="noiseReductionThreshold" value="1.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+         <tr>
+            <td id="enabled" value="true"/>
+            <td id="biasEnabled" value="true"/>
+            <td id="bias" value="0.000"/>
+            <td id="noiseReductionEnabled" value="false"/>
+            <td id="noiseReductionThreshold" value="1.0000"/>
+            <td id="noiseReductionAmount" value="1.00"/>
+            <td id="noiseReductionAdaptive" value="0.0000"/>
+         </tr>
+      </table>
+      <parameter id="transform" value="MultiscaleMedianTransform"/>
+      <parameter id="medianWaveletThreshold" value="5.00"/>
+      <parameter id="scaleDelta" value="0"/>
+      <parameter id="linearMask" value="false"/>
+      <parameter id="linearMaskAmpFactor" value="100"/>
+      <parameter id="linearMaskSmoothness" value="1.00"/>
+      <parameter id="linearMaskInverted" value="true"/>
+      <parameter id="linearMaskPreview" value="false"/>
+      <parameter id="lowRange" value="0.0000"/>
+      <parameter id="highRange" value="0.0000"/>
+      <parameter id="previewMode" value="Disabled"/>
+      <parameter id="previewLayer" value="0"/>
+      <parameter id="toLuminance" value="false"/>
+      <parameter id="toChrominance" value="true"/>
       <parameter id="linear" value="true"/>
-      <parameter id="amount" value="1"/>
-      <parameter id="shadows_clipping" value="-2.80"/>
-      <parameter id="target_background" value="0.25"/>
    </instance>
-   <instance class="StarNet2" version="256" id="StarNet2_instance">
-      <parameter id="stride" value="defStride"/>
-      <parameter id="mask" value="true"/>
-      <parameter id="linear" value="true"/>
-      <parameter id="upsample" value="false"/>
-      <parameter id="shadows_clipping" value="-2.80"/>
-      <parameter id="target_background" value="0.25"/>
+   <instance class="PixelMath" version="256" id="AddStars_instance">
+      <parameter id="expression">$T+stars</parameter>
+      <parameter id="expression1"></parameter>
+      <parameter id="expression2"></parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="true"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="false"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">starry</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="SameAsTarget"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
    </instance>
-   <icon id="starx" instance="starx_instance" xpos="2344" ypos="720" workspace="Workspace01"/>
-   <icon id="noisex" instance="noisex_instance" xpos="2344" ypos="640" workspace="Workspace01"/>
-   <icon id="ABE" instance="ABE_instance" xpos="2344" ypos="64" workspace="Workspace01"/>
-   <icon id="CloneStamp" instance="CloneStamp_instance" xpos="2344" ypos="160" workspace="Workspace01"/>
-   <icon id="ColorSaturation" instance="ColorSaturation_instance" xpos="2344" ypos="344" workspace="Workspace01"/>
-   <icon id="HST" instance="HST_instance" xpos="2344" ypos="296" workspace="Workspace01"/>
-   <icon id="PCC" instance="PCC_instance" xpos="2344" ypos="216" workspace="Workspace01"/>
-   <icon id="PixelMath" instance="PixelMath_instance" xpos="2344" ypos="392" workspace="Workspace01"/>
-   <icon id="SCNR" instance="SCNR_instance" xpos="2344" ypos="592" workspace="Workspace01"/>
-   <icon id="ACDNR" instance="ACDNR_instance" xpos="2344" ypos="568" workspace="Workspace01"/>
-   <icon id="TGV" instance="TGV_instance" xpos="2344" ypos="544" workspace="Workspace01"/>
-   <icon id="ImageIntegration" instance="ImageIntegration_instance" xpos="2344" ypos="856" workspace="Workspace01"/>
-   <icon id="DrizzleIntegration" instance="DrizzleIntegration_instance" xpos="2344" ypos="880" workspace="Workspace01"/>
-   <icon id="HDRComposition" instance="HDRComposition_instance" xpos="2344" ypos="904" workspace="Workspace01"/>
-   <icon id="STF" instance="STF_instance" xpos="2344" ypos="320" workspace="Workspace01"/>
-   <icon id="DCrop" instance="DCrop_instance" xpos="2344" ypos="136" workspace="Workspace01"/>
-   <icon id="DBE" instance="DBE_instance" xpos="2344" ypos="88" workspace="Workspace01"/>
-   <icon id="BGNeutralization" instance="BGNeutralization_instance" xpos="2344" ypos="192" workspace="Workspace01"/>
-   <icon id="AddStars" instance="AddStars_instance" xpos="2344" ypos="1040" workspace="Workspace01"/>
-   <icon id="SHOCombination" instance="SHOCombination_instance" xpos="2344" ypos="944" workspace="Workspace01"/>
-   <icon id="HOCombination" instance="HOCombination_instance" xpos="2344" ypos="968" workspace="Workspace01"/>
-   <icon id="FastRotation" instance="FastRotation_instance" xpos="2344" ypos="800" workspace="Workspace01"/>
-   <icon id="LocalHistogramEquilization" instance="LocalHistogramEquilization_instance" xpos="2344" ypos="416" workspace="Workspace01"/>
-   <icon id="MMTNR" instance="MMTNR_instance" xpos="2344" ypos="616" workspace="Workspace01"/>
-   <icon id="ExponentialTransformation" instance="ExponentialTransformation_instance" xpos="2344" ypos="440" workspace="Workspace01"/>
-   <icon id="GHS" instance="GHS_instance" xpos="2344" ypos="272" workspace="Workspace01"/>
-   <icon id="Resample" instance="Resample_instance" xpos="2344" ypos="776" workspace="Workspace01"/>
-   <icon id="UnsharpMask" instance="UnsharpMask_instance" xpos="2344" ypos="464" workspace="Workspace01"/>
-   <icon id="HDRMultiscaleTransform" instance="HDRMultiscaleTransform_instance" xpos="2344" ypos="488" workspace="Workspace01"/>
-   <icon id="NarrowbandNormalization" instance="NarrowbandNormalization_instance" xpos="2344" ypos="512" workspace="Workspace01"/>
-   <icon id="SPCC" instance="SPCC_instance" xpos="2344" ypos="240" workspace="Workspace01"/>
-   <icon id="LinearFit" instance="LinearFit_instance" xpos="2344" ypos="16" workspace="Workspace01"/>
-   <icon id="ChannelCombination" instance="ChannelCombination_instance" xpos="2344" ypos="40" workspace="Workspace01"/>
-   <icon id="addBG" instance="addBG_instance" xpos="2344" ypos="992" workspace="Workspace01"/>
-   <icon id="CurvesTransformation" instance="CurvesTransformation_instance" xpos="2344" ypos="368" workspace="Workspace01"/>
-   <icon id="blurx" instance="blurx_instance" xpos="2344" ypos="744" workspace="Workspace01"/>
-   <icon id="StarAlignment" instance="StarAlignment_instance" xpos="2344" ypos="824" workspace="Workspace01"/>
-   <icon id="LRGBStarFix" instance="LRGBStarFix_instance" xpos="2344" ypos="1016" workspace="Workspace01"/>
-   <icon id="GradientCorrection" instance="GradientCorrection_instance" xpos="2344" ypos="112" workspace="Workspace01"/>
-   <icon id="DeepSNR" instance="DeepSNR_instance" xpos="2344" ypos="664" workspace="Workspace01"/>
-   <icon id="StarNet2" instance="StarNet2_instance" xpos="2344" ypos="696" workspace="Workspace01"/>
+   <instance class="PixelMath" version="256" id="hoo_instance">
+      <parameter id="expression">h</parameter>
+      <parameter id="expression1">o</parameter>
+      <parameter id="expression2">o</parameter>
+      <parameter id="expression3"></parameter>
+      <parameter id="useSingleExpression" value="false"/>
+      <parameter id="symbols"></parameter>
+      <parameter id="clearImageCacheAndExit" value="false"/>
+      <parameter id="cacheGeneratedImages" value="false"/>
+      <parameter id="generateOutput" value="true"/>
+      <parameter id="singleThreaded" value="false"/>
+      <parameter id="optimization" value="true"/>
+      <parameter id="use64BitWorkingImage" value="false"/>
+      <parameter id="rescale" value="false"/>
+      <parameter id="rescaleLower" value="0"/>
+      <parameter id="rescaleUpper" value="1"/>
+      <parameter id="truncate" value="true"/>
+      <parameter id="truncateLower" value="0"/>
+      <parameter id="truncateUpper" value="1"/>
+      <parameter id="createNewImage" value="true"/>
+      <parameter id="showNewImage" value="true"/>
+      <parameter id="newImageId">hoo</parameter>
+      <parameter id="newImageWidth" value="0"/>
+      <parameter id="newImageHeight" value="0"/>
+      <parameter id="newImageAlpha" value="false"/>
+      <parameter id="newImageColorSpace" value="RGB"/>
+      <parameter id="newImageSampleFormat" value="SameAsTarget"/>
+      <table id="outputData" rows="0"/>
+   </instance>
+   <instance class="Script" version="256" id="ApplySTF_instance">
+      <parameter id="filePath">$PXI_SRCDIR/scripts/NightPhotons/ApplySTF.js</parameter>
+      <parameter id="md5sum">2c246627fc7d9ea31f6a25aab33893fe</parameter>
+      <table id="parameters" rows="1">
+         <tr>
+            <td id="id">RespectMask</td>
+            <td id="value">false</td>
+         </tr>
+      </table>
+      <parameter id="information"></parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="l_instance">
+      <parameter id="id">l</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="r_instance">
+      <parameter id="id">r</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="g_instance">
+      <parameter id="id">g</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="b_instance">
+      <parameter id="id">b</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="s_instance">
+      <parameter id="id">s</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="h_instance">
+      <parameter id="id">h</parameter>
+   </instance>
+   <instance class="ImageIdentifier" version="256" id="o_instance">
+      <parameter id="id">o</parameter>
+   </instance>
+   <icon id="ABE" instance="ABE_instance" xpos="2304" ypos="16" workspace="Workspace01"/>
+   <icon id="CloneStamp" instance="CloneStamp_instance" xpos="2408" ypos="40" workspace="Workspace01"/>
+   <icon id="ColorSaturation" instance="ColorSaturation_instance" xpos="2288" ypos="552" workspace="Workspace01"/>
+   <icon id="HST" instance="HST_instance" xpos="2288" ypos="432" workspace="Workspace01"/>
+   <icon id="SCNR" instance="SCNR_instance" xpos="2408" ypos="304" workspace="Workspace01"/>
+   <icon id="ACDNR" instance="ACDNR_instance" xpos="2408" ypos="280" workspace="Workspace01"/>
+   <icon id="STF" instance="STF_instance" xpos="2296" ypos="592" workspace="Workspace01"/>
+   <icon id="DynamicCrop" instance="DynamicCrop_instance" xpos="2408" ypos="16" workspace="Workspace01"/>
+   <icon id="DBE" instance="DBE_instance" xpos="2304" ypos="40" workspace="Workspace01"/>
+   <icon id="BGNeutralization" instance="BGNeutralization_instance" xpos="2408" ypos="176" workspace="Workspace01"/>
+   <icon id="FastRotation" instance="FastRotation_instance" xpos="2408" ypos="88" workspace="Workspace01"/>
+   <icon id="MMTNR" instance="MMTNR_instance" xpos="2408" ypos="328" workspace="Workspace01"/>
+   <icon id="ExpTransform" instance="ExpTransform_instance" xpos="2288" ypos="456" workspace="Workspace01"/>
+   <icon id="GHS" instance="GHS_instance" xpos="2288" ypos="408" workspace="Workspace01"/>
+   <icon id="Resample" instance="Resample_instance" xpos="2408" ypos="64" workspace="Workspace01"/>
+   <icon id="HDRMT" instance="HDRMT_instance" xpos="2288" ypos="528" workspace="Workspace01"/>
+   <icon id="SPCC" instance="SPCC_instance" xpos="2408" ypos="200" workspace="Workspace01"/>
+   <icon id="LinearFit" instance="LinearFit_instance" xpos="2408" ypos="152" workspace="Workspace01"/>
+   <icon id="CC" instance="CC_instance" xpos="2304" ypos="248" workspace="Workspace01"/>
+   <icon id="StarAlign" instance="StarAlign_instance" xpos="2304" ypos="272" workspace="Workspace01"/>
+   <icon id="DeepSNR" instance="DeepSNR_instance" xpos="2408" ypos="376" workspace="Workspace01"/>
+   <icon id="StarNet2" instance="StarNet2_instance" xpos="2288" ypos="304" workspace="Workspace01"/>
+   <icon id="Convolution" instance="Convolution_instance" xpos="2408" ypos="112" workspace="Workspace01"/>
+   <icon id="GC" instance="GC_instance" xpos="2304" ypos="64" workspace="Workspace01"/>
+   <icon id="StarX" instance="StarX_instance" xpos="2288" ypos="328" workspace="Workspace01"/>
+   <icon id="Curves" instance="Curves_instance" xpos="2288" ypos="480" workspace="Workspace01"/>
+   <icon id="lrgbC" instance="lrgbC_instance" xpos="2304" ypos="144" workspace="Workspace01"/>
+   <icon id="rgbC" instance="rgbC_instance" xpos="2304" ypos="168" workspace="Workspace01"/>
+   <icon id="shoC" instance="shoC_instance" xpos="2304" ypos="192" workspace="Workspace01"/>
+   <icon id="LHE" instance="LHE_instance" xpos="2288" ypos="504" workspace="Workspace01"/>
+   <icon id="BlurX" instance="BlurX_instance" xpos="2408" ypos="224" workspace="Workspace01"/>
+   <icon id="NoiseX" instance="NoiseX_instance" xpos="2408" ypos="352" workspace="Workspace01"/>
+   <icon id="SubD1" instance="SubD1_instance" xpos="2304" ypos="88" workspace="Workspace01"/>
+   <icon id="DivD2" instance="DivD2_instance" xpos="2304" ypos="112" workspace="Workspace01"/>
+   <icon id="lumc" instance="lumc_instance" xpos="2304" ypos="224" workspace="Workspace01"/>
+   <icon id="TGV" instance="TGV_instance" xpos="2408" ypos="256" workspace="Workspace01"/>
+   <icon id="RangeSelection" instance="RangeSelection_instance" xpos="2400" ypos="408" workspace="Workspace01"/>
+   <icon id="CrunchBlacks" instance="CrunchBlacks_instance" xpos="2400" ypos="432" workspace="Workspace01"/>
+   <icon id="CrunchWhites" instance="CrunchWhites_instance" xpos="2400" ypos="456" workspace="Workspace01"/>
+   <icon id="ScreenStars" instance="ScreenStars_instance" xpos="2288" ypos="352" workspace="Workspace01"/>
+   <icon id="UL_02" instance="UL_02_instance" xpos="2416" ypos="680" workspace="Workspace01"/>
+   <icon id="L_02" instance="L_02_instance" xpos="2416" ypos="704" workspace="Workspace01"/>
+   <icon id="UL_01" instance="UL_01_instance" xpos="2416" ypos="632" workspace="Workspace01"/>
+   <icon id="L_01" instance="L_01_instance" xpos="2416" ypos="656" workspace="Workspace01"/>
+   <icon id="sho" instance="sho_instance" xpos="2288" ypos="656" workspace="Workspace01"/>
+   <icon id="rgb" instance="rgb_instance" xpos="2288" ypos="680" workspace="Workspace01"/>
+   <icon id="NukeChrominance" instance="NukeChrominance_instance" xpos="2376" ypos="592" workspace="Workspace01"/>
+   <icon id="AddStars" instance="AddStars_instance" xpos="2288" ypos="376" workspace="Workspace01"/>
+   <icon id="hoo" instance="hoo_instance" xpos="2288" ypos="632" workspace="Workspace01"/>
+   <icon id="ApplySTF" instance="ApplySTF_instance" xpos="2408" ypos="728" workspace="Workspace01"/>
+   <icon id="l" instance="l_instance" xpos="2296" ypos="720" workspace="Workspace01"/>
+   <icon id="r" instance="r_instance" xpos="2296" ypos="744" workspace="Workspace01"/>
+   <icon id="g" instance="g_instance" xpos="2296" ypos="768" workspace="Workspace01"/>
+   <icon id="b" instance="b_instance" xpos="2296" ypos="792" workspace="Workspace01"/>
+   <icon id="s" instance="s_instance" xpos="2296" ypos="816" workspace="Workspace01"/>
+   <icon id="h" instance="h_instance" xpos="2296" ypos="840" workspace="Workspace01"/>
+   <icon id="o" instance="o_instance" xpos="2296" ypos="864" workspace="Workspace01"/>
 </xpsm>
